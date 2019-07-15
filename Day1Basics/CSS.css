@@ -1,0 +1,25 @@
+body {
+    background-color: yellow;
+    color: red; 
+}
+hr {
+    color: pink;
+}
+#ugly1 {
+    background-color: aqua;
+    color: yellow;
+}
+#ugly2 {
+    background-color: lime;
+    color: magenta;
+}
+.schedule, th, td {
+    background-image: linear-gradient(to bottom right, red, yellow);
+    color: white;
+    font-weight: bold;
+    border-collapse: collapse;
+    border: 2px inset red;
+}
+.center {
+    text-align: center;
+}

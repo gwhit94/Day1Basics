@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day1 Basics</title>
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" type="text/css" href="CSS.css"> 
+</head>
+<body>
+<header>
+    <p>~~~DISCLAIMER: I decided to make this color palette as eye searing as I could, because I thought it was funny. :) ~~~</p>
+    
+    <table class="schedule center"> BODACIOUS BOBBY'S BALLOON VOYAGES
+        <tr>
+            <th></th>
+            <th>SUNDAY</th>
+            <th>MONDAY</th>
+            <th>TUESDAY</th>
+            <th>WEDNESDAY</th>
+            <th>THURSDAY</th>
+            <th>FRIDAY</th>
+            <th>SATURDAY</th>
+        </tr>
+        <tr>
+            <td>MORNING</td>
+            <td rowspan="3">CLOSED</td>
+            <td colspan="6">OPEN @ 9AM for Appointments</td>  
+        </tr>
+        <tr>
+            <td>AFTERNOON</td>
+            <td colspan="6">CLOSE @ 7PM</td> 
+        </tr>
+        <tr>
+            <td>EVENING</td>
+            <td colspan="6">CLOSED</td>
+        </tr>
+    </table>
+    <form id="contact">
+        <fieldset>
+            <legend>Contact Us!</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <br>
+            <label for="timeOfDay">Time of Flight:</label>
+            <input type="radio" id="time1" name="time" value="9AM-11AM">
+            <label for="time1">9AM-11AM</label>
+            <input type="radio" id="time2" name="time" value="11AM-1PM">
+            <label for="time1">11AM-1PM</label>
+            <input type="radio" id="time3" name="time" value="1PM-3PM">
+            <label for="time1">1PM-3PM</label>
+            <input type="radio" id="time4" name="time" value="3PM-5PM">
+            <label for="time1">3PM-5PM</label>
+            <input type="radio" id="time5" name="time" value="5PM-7PM" checked="checked">
+            <label for="time1">5PM-7PM</label>
+            <br>
+            <label for="partySize">Party Size (max 5):</label>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <label for="extras">Extras?</label>
+            <input type="checkbox" id="extra1" name="extra" value="wine">
+            <label for="extra1">Bottle of Wine</label>
+            <input type="checkbox" id="extra2" name="extra" value="binos">
+            <label for="extra2">A Pair of Binoculars</label>
+            <input type="checkbox" id="extra3" name="extra" value="barfBag">
+            <label for="extra3">Barf Bag!</label>
+        </fieldset>
+    </form>
+<hr>
+    <table class="schedule center"> WEEKLY SCHEDULE
+        <tr>
+            <th></th>
+            <th>SUNDAY</th>
+            <th>MONDAY</th>
+            <th>TUESDAY</th>
+            <th>WEDNESDAY</th>
+            <th>THURSDAY</th>
+            <th>FRIDAY</th>
+            <th>SATURDAY</th>
+        </tr>
+        <tr>
+            <td>Morning</td>
+            <td rowspan="2">BRUNCH</td>
+            <td colspan="5" rowspan="2" class="center">LEARN & CODE</td>
+            <td>SLEEP</td>
+        </tr>
+        <tr>
+            <td>Afternoon</td>
+            <td>VIDYA</td>
+        </tr>
+        <tr>
+            <td>Evening</td>
+            <td colspan="5">SLEEP</td>
+            <td>VIDYA</td>
+            <td>PARTY</td>
+        </tr>
+    </table>
+</header>
+<br>
+<hr>
+<br>
+<section class="" id="uniqueId">
+    <p>iAmCamelCase</p>
+    <p>i_am_snake_case</p>
+    <p>i-am-kebab-case</p>
+</section>
+<hr> 
+<nav class="navigation">
+    <div class="link center">
+        <a href="https://www.google.com" target="_blank" title="Google"> Google </a>
+        <!-- anchor tags can also link a specific class or id in the href to add whatever container or item is contained at that ID location -->
+    </div>
+</nav>
+<hr>
+<section class="container">
+    <p>Some elements like this p element are block elements</p>
+    <span>Others like this p element are inline elements.</span>
+    <span> See? This is another p element, but because it is a span element it's right next to the last one instead of a new line.</span>
+</section>
+<hr>
+<article class="conatiner">
+    <header>
+        <h3>Article Header</h3>
+    </header>
+    If you add more semantic elements to your code you are less likely to get lost in your code!
+</article>
+<hr>
+<section class="container">
+    <ol title="I am an ordered list!"> <h3> I am an ordered list! </h3>
+        <li>I am a numbered list element</li>
+        <li>Me too!</li>
+    </ol>
+    <hr>
+    <ul title="I am an unordered list!"> <h3>I am an unordered list! </h3> 
+        <li>I'm an unordered list element</li>
+        <li>but I am still a list element, no different from the numbered list element.</li>
+        <li>wow!</li>
+    </ul>
+    <hr>
+    <ol> nesting lists?
+        <li>
+            <ul> wowow
+                <li>wew wew</li>
+            </ul>
+        </li>
+        <li> wow?</li>
+    </ol>
+</section>
+<hr>
+<b>I'm so bold</b>
+<strong>IM SO STRONG</strong>
+<hr>
+<section id="ugly1">
+    <h1>AM I THE UGLIEST </h1>
+</section>
+<hr>
+<section id="ugly2">
+    <h1>OR IS IT I?</h1>
+    <p> no, <i>I'm gorgeous </i></p>
+</section>
+<!-- this is a comment -->
+<!-- you can comment in VS code by selecting and command + / -->
+<!-- hr element tag is used for a thematic break, it is a self closing tag -->
+<!-- img tags are also self closing tags -->
+
+</body>
+</html>
